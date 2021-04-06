@@ -5,4 +5,4 @@ Programs of applied maths lab
 <br />Feel free to share
 ## Contributers are invited
 
-To contribute fork the repository and make a pull request on separate brance
+To contribute fork the repository and make a pull request on separate branch
