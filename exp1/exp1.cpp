@@ -56,6 +56,7 @@ void prodMatrix(int** A,int ar,int ac,int** B,int br,int bc){
 		for(int i = 0; i < ar; i++){
         	C[i] = new int[bc];
         	for(int j = 0; j < bc; j++){
+        		C[i][j] = 0;
 	            for(int k = 0; k < ac; k++){
 	                C[i][j] += A[i][k] * B[k][j];
             	}
