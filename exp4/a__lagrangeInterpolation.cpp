@@ -1,3 +1,7 @@
+// write a program to evaluate y for x = 10 using lagrange interpolation formula  from following data
+//		x:	5	6 	9 	11
+//		y:  12	13	14	16
+
 #include<iostream>
 #include<conio.h>
 
