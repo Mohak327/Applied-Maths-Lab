@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
 #include<iostream>
 
 using namespace std;
@@ -11,9 +12,11 @@ double func(double x) {
 
 void bisection(double a, double b) {
 
+    int count = 0;
     double c = a;
     while ((b-a) >= EPSILON) {
         c = (a+b)/2;
+        count++;
 
         if (func(c) == 0.0)
             break;
@@ -22,22 +25,33 @@ void bisection(double a, double b) {
         else
             a = c;
     }
-    cout << "\nRoot of the equation is : " << c;
+    cout << "\nRoot of the equation is : " << c << ", (" << count << " iterations)";
 }
 
 int main() {
     double a = -1, b = 3;
-	cout <<"Equation is: x^3 - 2x - 5 = 0";
+	cout <<"\n\nEquation is: x^3 - 2x - 5 = 0";
     bisection(a, b);
+    cout << "\nMade by: Mohak Sharma, 12-CSEA-19\n\n";
 
-    cout << "Made by: Mohak Sharma, 12-CSEA-19";
+// // Test code to print function values.
+//     while(1) {
+//             double x;
+//         cout << "\n\nenter x: ";
+//         cin >> x;
+//         cout << "f(X) = " << x*x - log(x) - 12;
+//     }
+
     return 0;
 }
 
+
+
 // Take seed values from user
-    // cout << "Enter two initial(seed) values: ";
-    // cin >> a >> b;
-    // if (func(a) * func(b) >= 0) {
-    //     cout << "Invalid values of a and b. Please re-enter: \n";
-    //     cout << "Enter two initial(seed) values: ";
-    // }
+//     cout << "Enter two initial(seed) values: ";
+//     cin >> a >> b;
+//     if (func(a) * func(b) >= 0) {
+//         cout << "Invalid values of a and b. Please re-enter: \n";
+//         cout << "Enter two initial(seed) values: ";
+//     }
+
