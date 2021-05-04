@@ -10,7 +10,7 @@ int main() {
 
     x0 = 0;
     y0 = 1;
-    xn = 0.2;
+    xn = 0.2;       // Value of x at which y is to be found.
     cout << "Enter number of steps: ";
     cin>> n;
 

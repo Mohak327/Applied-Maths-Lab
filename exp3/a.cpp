@@ -24,7 +24,7 @@ int main(){
 	cout<<"Equations are: \n8x - 3y + 2z = 20\n4x - 11y - z = 33\n6x + 3y + 12z = 35\n";
 	double x0=0,y0=0,z0=0;
 
-	while(1){
+	while(1) {
 		double x,y,z;
 		x = eq1(y0,z0);
 		y = eq2(x,z0);
