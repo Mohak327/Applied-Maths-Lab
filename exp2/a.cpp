@@ -1,28 +1,57 @@
-#include<bits/stdc++.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<iostream>
+
 using namespace std;
+#define EPSILON 0.001
 
-// write a program to find real root of equation x^3 -2x - 5 = 0 by bisection method correct to three decimal places
-
-int main(){
-	cout<<"\t\t\t\t\t\t\t\t\t\t\tExperiment 2(a)\n\t\t\t\t\t\t\t\t\t\t\tShubham Jindal CSE-A 40\n\t\t\t\t\t\t\t\t\t\t\tDate: 30-03-21 \n\n";		
-	double x0 = 2 , x1 = 3;
-	double y0 = -1 , y1 = 16;
-	
-	cout<<"Equation is: x^3 - 2x - 5 = 0 \nRoot of equation is: ";
-	
-	while(abs((int)(y0*100) - (int)(y1*1000)) > 0){
-		double x = (x0+x1)/2;
-		double y = (double)x*x*x - 2.0*x - 5.0 ;
-		if(y<0){
-			x0 = x;
-		}
-		else{
-			x1 = x;
-		}
-		y0 = y1;
-		y1 = y;
-	} 
-	cout<<x0;
-	return 0;
+double func(double x) {
+    return x*x*x - 2*x - 5;
 }
+
+void bisection(double a, double b) {
+
+    int count = 0;
+    double c = a;
+    while ((b-a) >= EPSILON) {
+        c = (a+b)/2;
+        count++;
+
+        if (func(c) == 0.0)
+            break;
+        else if (func(c)*func(a) < 0)
+            b = c;
+        else
+            a = c;
+    }
+    cout << "\nRoot of the equation is : " << c << ", (" << count << " iterations)";
+}
+
+int main() {
+    double a = -1, b = 3;
+	cout <<"\n\nEquation is: x^3 - 2x - 5 = 0";
+    bisection(a, b);
+    cout << "\nMade by: Mohak Sharma, 12-CSEA-19\n\n";
+
+// // Test code to print function values.
+//     while(1) {
+//             double x;
+//         cout << "\n\nenter x: ";
+//         cin >> x;
+//         cout << "f(X) = " << x*x - log(x) - 12;
+//     }
+
+    return 0;
+}
+
+
+
+// Take seed values from user
+//     cout << "Enter two initial(seed) values: ";
+//     cin >> a >> b;
+//     if (func(a) * func(b) >= 0) {
+//         cout << "Invalid values of a and b. Please re-enter: \n";
+//         cout << "Enter two initial(seed) values: ";
+//     }
 
