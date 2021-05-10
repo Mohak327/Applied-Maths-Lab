@@ -8,7 +8,7 @@ using namespace std;
 #define int long long
 
 int32_t main(){
-	cout<<"\t\t\t\t\t\t\tExperiment 4\n\t\t\t\t\t\t\tShubham Jindal CSE-A 40\n\t\t\t\t\t\t\tDate: 13-04-21 \n\n";		
+	cout<<"\t\t\t\t\t\t\tExperiment 4\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 13-04-21 \n\n";		
 	cout<<"\nProgram to evaluate y for x = 10 using Lagrange interpolation formula  from following data:\n";
 	cout<<"\nx:\t5\t6\t9\t11";
 	cout<<"\ny:\t12\t13\t14\t16";

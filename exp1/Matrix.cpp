@@ -72,7 +72,8 @@ void prodMatrix(int** A,int ar,int ac,int** B,int br,int bc){
 int main(){
 	int ar,ac,br,bc;
 
-	cout<<"\t\t\t\t\t\t\t\t\t\t\tExperiment 1\n\t\t\t\t\t\t\t\t\t\t\tShubham Jindal CSE-A 40\n\t\t\t\t\t\t\t\t\t\t\tDate: 16-03-21 \n\n";
+	cout<<"\t\t\t\t\t\t\tExperiment 1\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 16-03-21 \n\n";		
+	cout<<"\nProgram to perform matrix additon, subtraction and multiplication:\n";
 
 	cout<<"Enter number of rows of matrix A: ";
 	cin>>ar;
@@ -108,22 +109,6 @@ int main(){
 
 	return 0;
 }
-
-
-// void prodMatrix(int** A, int ar, int ac, int** B, int br, int bc){
-// 	if(ac==br){
-// 		int **C = new int*[ar];
-// 		for(int i = 0; i < ar; i++){
-//         	C[i] = new int[bc];
-//         	for(int j = 0; j < bc; j++){
-// 	            for(int k = 0; k < ac; k++){
-// 	                C[i][j] += A[i][k] * B[k][j];
-//             	}
-// 			}
-// 		}
-// 		printMatrix(C,ar,bc);//,3,3);
-// 	}
-// }
 
 
 

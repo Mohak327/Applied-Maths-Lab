@@ -8,7 +8,8 @@ double fx(double x){
 }
 
 int main(){
-	cout<<"\t\t\t\t\t\t\t\t\t\t\tExperiment 2(b)\n\t\t\t\t\t\t\t\t\t\t\tShubham Jindal CSE-A 40\n\t\t\t\t\t\t\t\t\t\t\tDate: 30-03-21 \n\n";		
+	cout<<"\t\t\t\t\t\t\tExperiment 2(b)\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 30-03-21 \n\n";		
+	cout<<"\nProgram to find a positive root of equation x^2 - log(x) - 12 = 0 using Regula-Falsi method\n";
 	double x0 = 3 , x1 = 4;
 	double y0 = -3.47712 , y1 = 3.39794;
 	
