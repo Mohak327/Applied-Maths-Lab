@@ -16,7 +16,7 @@ double func(double x,double y){
 }
 
 int main(){
-	cout<<"\t\t\t\t\t\t\tExperiment 6\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 20-04-21 \n\n";			
+	cout<<"\t\t\t\t\t\t\tExperiment 5\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 20-04-21 \n\n";			
 	cout<<"\nProgram to evaluate y for x = 0.2 using Runge Kutta Method  from differential equation:";
 	cout<<"\ndy/dy = x + y^2 \ngiven y = 1 for x = 0 .\n\n";
 	
