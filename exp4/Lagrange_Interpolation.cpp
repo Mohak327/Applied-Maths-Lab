@@ -1,39 +1,42 @@
 // write a program to evaluate y for x = 10 using lagrange interpolation formula  from following data
 //		x:	5	6 	9 	11
 //		y:  12	13	14	16
+#include<iostream>
+#include<conio.h>
 
-#include<bits/stdc++.h>
 using namespace std;
 
-#define int long long
+int main(){
+	float x[100], y[100], xp, yp=0, p;
+	int i, j, n;
 
-int32_t main(){
-	cout<<"\t\t\t\t\t\t\tExperiment 4\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 13-04-21 \n\n";		
-	cout<<"\nProgram to evaluate y for x = 10 using Lagrange interpolation formula  from following data:\n";
-	cout<<"\nx:\t5\t6\t9\t11";
-	cout<<"\ny:\t12\t13\t14\t16";
-	double x[] = {5,6,9,11};
-	double y[] = {12,13,14,16};
-	double x0 = 10 ;
-	int n = 4;
-	double result = 0;
-	
-	for(int i=0;i<n;i++){
-		double yi = 1;
-		for(int j=0;j<n;j++){
-			if(i==j){
-				continue;
-			}
-			else{
-				yi *= ((x0-x[j])/(x[i]-x[j])) ;
-			}
-		}
-		yi = yi*y[i];
-		result += yi;
+	cout<<"Enter number of data points: ";
+	cin>>n;
+	cout<<"Enter data \n\n";
+
+	cout<<"Enter x-values: "<< endl;
+	for (i=1; i<=n; i++) {
+	    cout<<"x"<< i << " ";
+		    cin>>x[i];
+    }
+
+	cout<<"\nEnter y-values: \n";
+    for (i=1; i<=n; i++) {
+        cout<<"y"<< i << " ";
+            cin>>y[i];
 	}
-	cout<<"\n\nThe value of y for x = 10 is "<<result;
-		
+	cout << "\nEnter interpolation point\nx = ";
+	cin >> xp;
 
-	return 0;
-}
+	for (i=1; i<=n; i++) {
+		p=1;
+	    for (j=1; j<=n; j++) {
+			if (i!=j)
+			    p *= (xp - x[j]) / (x[i] - x[j]);
+		}
+		yp += p * y[i];
+	}
 
+    cout << "Interpolated value at "<< xp << " is "<< yp;
+    cout << "Mohak Sharma, 12-CSEA-19 (01220802719)";
+    return 0;
