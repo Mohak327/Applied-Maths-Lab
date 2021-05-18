@@ -33,10 +33,11 @@ int main() {
         sumXY = sumXY +x[i]*y[i];
     }
 
-    a=((sumX2*sumY -sumX*sumXY)*1.0/(n*sumX2-sumX*sumX)*1.0);
-    b=((n*sumXY-sumX*sumY)*1.0/(n*sumX2-sumX*sumX)*1.0);
+    b = ((sumX2*sumY -sumX*sumXY)*1.0/(n*sumX2-sumX*sumX)*1.0);
+    a = ((n*sumXY-sumX*sumY)*1.0/(n*sumX2-sumX*sumX)*1.0);
 
-    cout << "Values are: a = " << a << " and b = " << b;
+    cout << "Values are: \n\ta = " << a << "\n\tb = " << b;
+    cout << "\nEquation of line is : y = " << a << "x + " << b;
 
- return(0);
+    return (0);
 }
