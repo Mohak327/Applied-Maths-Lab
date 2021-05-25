@@ -3,7 +3,7 @@
 // 2. simpson 1/3 rule
 // 3. simpson 3/8 rule
 
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 #define int long long
