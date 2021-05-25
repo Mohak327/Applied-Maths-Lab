@@ -1,4 +1,4 @@
-// Write a program to fit the equation of a line in te from of (y = ax + b) fro the following data.
+// Write a program to fit the equation of a line in te from of (y = ax + b) fro the following data using the method of least squares.
 
 // x : 1     2     3     4     5
 // y : 14	 27    40    55    68
