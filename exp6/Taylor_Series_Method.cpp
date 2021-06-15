@@ -16,13 +16,12 @@ int fact(int n){
 
 
 int main(){
-	cout<<"\t\t\t\t\t\t\tExperiment 6\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 04-05-21 \n\n";			
-	cout<<"\nProgram to evaluate y for x = 1.2 using Taylor Series Method  from differential equation:";
+	cout<<"\nProgram to evaluate y for x = 1.2 using Taylor Series Method \nfrom differential equation:";
 	cout<<"\ndy/dy = x + y \ngiven y = 0 for x = 1.\n\n";
-	
+
 	float h = 0.1;
 	float x = 1.2;
-	
+
 	float arr[] = {0.110,1.21,2.21,2.21,2.21};
 	float y = 0;
 	for(int i=0;i<5;i++){
@@ -30,8 +29,8 @@ int main(){
 	}
 	cout<<"Value of y for x = 1.2 is ";
 	cout<<y<<endl;
-	
-	
-	
+
+
+
 	return 0;
 }

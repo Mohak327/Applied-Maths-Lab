@@ -72,8 +72,7 @@ void prodMatrix(int** A,int ar,int ac,int** B,int br,int bc){
 int main(){
 	int ar,ac,br,bc;
 
-	cout<<"\t\t\t\t\t\t\tExperiment 1\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 16-03-21 \n\n";		
-	cout<<"\nProgram to perform matrix additon, subtraction and multiplication:\n";
+	cout<<"\nProgram to perform matrix additon, subtraction and multiplication\n--------------------------------------------------------------\n";
 
 	cout<<"Enter number of rows of matrix A: ";
 	cin>>ar;

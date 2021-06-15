@@ -38,5 +38,5 @@ int main(){
 	}
 
     cout << "Interpolated value at "<< xp << " is "<< yp;
-    cout << "Mohak Sharma, 12-CSEA-19 (01220802719)";
-    return 0;
+    // cout << "Mohak Sharma, 12-CSEA-19 (01220802719)";    return 0;
+}

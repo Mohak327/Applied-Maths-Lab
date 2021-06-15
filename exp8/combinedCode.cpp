@@ -22,8 +22,7 @@ float fx(float x){
 
 int32_t main(){
 	fast_io;
-
-	cout<<"\t\t\t\t\t\t\tExperiment 8\n\t\t\t\t\t\t   Shubham Jindal CSE-A 40\n\t\t\t\t\t\t     RollNo.04020802719\n\t\t\t\t\t\t\tDate: 25-05-21 \n\n";
+	
 	cout<<"\nProgram to evaluate  lim(0-1) (1/(1+x^2)) dx  h=1/6 using: ";
 	cout<<"\n1. trapezoidal rule";
 	cout<<"\n2. simpson 1/3 rule";

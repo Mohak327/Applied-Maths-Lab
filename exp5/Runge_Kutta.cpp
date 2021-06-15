@@ -10,7 +10,7 @@ int main() {
     float x0, y0, xn, h, yn, k1, k2, k3, k4, k;
     int i, n;
 
-	cout<<"\nProgram to evaluate y for x = 0.2 using Runge Kutta Method  from differential equation:";
+	cout<<"\nProgram to evaluate y for x = 0.2\nusing Runge Kutta Method from differential equation:";
 	cout<<"\ndy/dy = x + y^2 \ngiven y = 1 for x = 0.\n\n";
 
     x0 = 0;
